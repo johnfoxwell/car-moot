@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS carmoot_db;
+CREATE DATABASE carmoot_db;
