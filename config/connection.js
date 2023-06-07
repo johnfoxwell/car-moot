@@ -3,7 +3,7 @@ require('dotenv').config();
 
 let sequelize;
 
-// JawsDB from heroku addon
+// JawsDB for heroku addon
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
