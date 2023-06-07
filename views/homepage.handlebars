@@ -1,0 +1,21 @@
+<!-- Loop over each object in the cars array -->
+{{#each cars as |car| }}
+<div class="row mb-4 car">
+  <div class="col-md-5">
+    <h2>
+      <a href="/car/{{car.id}}">{{car.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="car">🚗</span>
+      <span class="transmission">{{car.transmission}} transmission rocks!</span>
+      <span class="drivetrain">{{car.drivetrain}}</span>
+    </p>
+    <p>Created by {{car.user.name}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{car.description}}
+    </p>
+  </div>
+</div>
+{{/each}}
